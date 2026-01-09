@@ -60,8 +60,8 @@ class PanSou:
             url = item.get("url", "")
             note = item.get("note", "")
             tm = item.get("datetime", "")
-            if tm:
-                tm = iso_to_cst(tm)
+            # if tm:
+            #     tm = iso_to_cst(tm)
 
             match = re.search(pattern, note)
             if match:
